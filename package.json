@@ -7,17 +7,15 @@
     "process": false
   },
   "scripts": {
-    "dev": "parcel",
-    "build": "parcel build",
-    "prod": "rm -rf dist/ && rm -rf .parcel-cache/ && parcel build --public-url /advice-generator-app/",
-    "deploy": "gh-pages -d dist"
+    "dev": "parcel --dist-dir docs",
+    "build": "parcel build --dist-dir docs",
+    "build-github": "rm -rf docs/* && rm -rf .parcel-cache/ && parcel build ./src/index.html --public-url ./ --dist-dir docs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
