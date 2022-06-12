@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Gitlab - Advice Generator App](https://gitlab.com/pratik280/advice-generator-app)
-- Live Site URL: [Advice Generator App - Live Site](https://pratik280.gitlab.io/advice-generator-app)
+- Solution URL: [Github - Advice Generator App](https://github.com/Pratik280/advice-generator-app)
+- Live Site URL: [Github Pages - Advice Generator App](https://pratik280.github.io/advice-generator-app/)
 
 ### Screenshot
 
