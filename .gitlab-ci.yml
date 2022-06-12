@@ -1,0 +1,10 @@
+pages:
+  script:
+    - mkdir .public
+    - cp -r dist/* .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
