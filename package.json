@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "parcel",
     "build": "parcel build",
-    "prod": "rm -rf dist/ && rm -rf .parcel-cache/ && parcel build --public-url ./"
+    "prod": "rm -rf dist/ && rm -rf .parcel-cache/ && parcel build"
   },
   "keywords": [],
   "author": "",
