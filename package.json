@@ -7,9 +7,9 @@
     "process": false
   },
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html",
-    "prod": "rm -rf dist/ && rm -rf .parcel-cache/ && parcel build ./src/index.html --public-url ./",
+    "dev": "parcel",
+    "build": "parcel build",
+    "prod": "rm -rf dist/ && rm -rf .parcel-cache/ && parcel build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
