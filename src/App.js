@@ -1,7 +1,7 @@
 import Advice from "./Components/Advice";
 import Footer from "./Components/Footer";
 
-export default App = () => {
+const App = () => {
   return (
     <>
       <Advice />
@@ -9,3 +9,5 @@ export default App = () => {
     </>
   );
 };
+
+export default App;
