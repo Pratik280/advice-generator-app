@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="attribution mt-3 text-lightcyan text-center">
+      <footer className="attribution mt-5 text-lightcyan text-center">
         Challenge by{" "}
         <a
           className="text-neongreen"

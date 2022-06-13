@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Error from "./Error";
+import Button from "./Button";
 
 const url = "https://api.adviceslip.com/advice";
 
@@ -9,7 +10,7 @@ const Advice = () => {
   const [isError, setisError] = useState(false);
   const [isData, setisData] = useState("No Data");
 
-  useEffect(() => {
+  const getData = () => {
     fetch(url)
       .then((resp) => {
         if (resp.status >= 200 && resp.status <= 299) {
@@ -26,6 +27,10 @@ const Advice = () => {
         setisLoading(false);
       })
       .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    getData();
   }, []);
 
   if (isLoading) {
@@ -37,10 +42,7 @@ const Advice = () => {
   }
 
   return (
-    <main
-      className="bg-darkgrayishblue mx-auto p-5 rounded-3 shadow d-flex flex-column align-items-center"
-      style={{ width: "min(90%, 35rem", marginTop: "15rem" }}
-    >
+    <>
       <p
         className="fs-6 text-neongreen fw-bolder text-uppercase"
         style={{ marginBottom: "0", letterSpacing: "2px" }}
@@ -54,7 +56,7 @@ const Advice = () => {
         width="295"
         height="16"
         xmlns="http://www.w3.org/2000/svg"
-        className="my-2"
+        className="my-3"
         style={{ minWidth: "250px" }}
       >
         <g fill="none" fillRule="evenodd">
@@ -65,7 +67,8 @@ const Advice = () => {
           </g>
         </g>
       </svg>
-    </main>
+      <Button getData={getData} />
+    </>
   );
 };
 

@@ -35,3 +35,12 @@ $utilities-text-colors: map-loop(
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 @import "~bootstrap/scss/bootstrap";
+
+.button__random {
+  margin-bottom: -5rem !important;
+  box-shadow: 1px 1px 5px 1px hsl(150, 100%, 66%);
+  transition: box-shadow 0.175s ease-in;
+  &:hover {
+    box-shadow: 1px 1px 20px 3px hsl(150, 100%, 66%);
+  }
+}

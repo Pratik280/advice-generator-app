@@ -5,3 +5,4 @@ node_modules/
 *.xd
 .DS_Store
 .prettierignore
+dist/

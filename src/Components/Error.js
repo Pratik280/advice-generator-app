@@ -4,7 +4,7 @@ const Error = () => {
   return (
     <div
       className="alert alert-danger mx-auto p-5 rounded-3 shadow d-flex flex-row align-items-center justify-content-center"
-      style={{ width: "min(90%, 35rem", marginTop: "15rem" }}
+      style={{ width: "min(90%, 35rem", marginTop: "1rem" }}
       role="alert"
     >
       <svg
@@ -14,9 +14,9 @@ const Error = () => {
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className="feather feather-alert-circle me-2"
       >
         <circle cx="12" cy="12" r="10"></circle>

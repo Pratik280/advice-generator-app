@@ -9,7 +9,15 @@ import Footer from "./Components/Footer";
 const App = () => {
   return (
     <>
-      <Advice />
+      <main
+        className="bg-darkgrayishblue mx-auto p-5 rounded-3 shadow d-flex flex-column align-items-center"
+        style={{
+          width: "min(90%, 35rem",
+          marginTop: "15rem",
+        }}
+      >
+        <Advice />
+      </main>
       <Footer />
     </>
   );
